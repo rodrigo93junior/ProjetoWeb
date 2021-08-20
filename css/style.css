@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-links {
+    background-color:transparent;
+    text-align: right ;
+}
+.nav-links  li{
+    display: inline-block;
+    margin-top: 1px;
+    border-top: 2px;
+    font-size: 15px;
+    border-bottom: 0px;
+    padding-bottom: 0x;
+    padding: 20px;
+}
+.logo{
+    position: center;
+    left: 60px;
+    top: 5px;
+}
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+    width: 584px;
+    height: 44px;
+    background-color: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+}
+input {
+    width: 480px;
+    height: 38px;
+    border: none;
+    align-self: center;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.imagem{
+    position: absolute;
+    z-index: -1;
+}
+.text{
+    position: absolute;
+    z-index: 1;
+    color: blue;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+}
