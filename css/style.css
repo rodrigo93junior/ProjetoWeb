@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 .nav-links {
@@ -16,11 +16,12 @@
     padding: 20px;
 }
 .logo{
-    position: center;
+    text-align: center;
     left: 60px;
     top: 5px;
 }
 .pesquisa {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,10 +41,10 @@ input {
     align-self: center;
 }
 .content {
-    display: flex;
+    margin-top: 10%;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    
 }
 .imagem{
     position: absolute;
