@@ -2,6 +2,40 @@
     margin: 0 auto;
     padding: 0;
 }
+*,input, button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link, a:visited {
+	text-decoration: none
+	}
+a:hover {
+	text-decoration: underline;
+	}
+a:active {
+	text-decoration: none
+	}
+.login_button {
+    cursor: pointer;
+    color: #fff;
+    margin-left: 8px;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.link_menu{
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
 .nav-links {
     background-color:transparent;
     text-align: right ;
@@ -15,13 +49,18 @@
     padding-bottom: 0x;
     padding: 20px;
 }
-.logo{
+.content {
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content__logo{
     text-align: center;
     left: 60px;
     top: 5px;
 }
-.pesquisa {
-    
+.content__pesquisa {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,18 +72,13 @@
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
+    margin-top: 24px;
 }
-input {
+.input_pesquisa {
     width: 480px;
     height: 38px;
     border: none;
     align-self: center;
-}
-.content {
-    margin-top: 10%;
-    align-items: center;
-    justify-content: center;
-    
 }
 .imagem{
     position: absolute;
@@ -56,8 +90,51 @@ input {
     color: blue;
 }
 footer {
+    margin-top: 24px;
+    display:block;
+    flex-direction: column;
     position: fixed;
     bottom: 0;
-    background-color: grey;
+    background-color: #f2f2f2;
     width: 100%;
+}
+.footer__pais {
+    padding: 15px 30px;
+    justify-content: left;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    
+}
+.footer__linkleft{
+    border-top: 1px solid #e4e4e4;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #70757a;
+    padding: 20px;
+}
+.content__button {
+    margin: 28px 4px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.buttonK {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.content__lenguage {
+
 }
