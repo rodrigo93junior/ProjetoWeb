@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 5</title>
+</head>
+
+<body>
+
+    <script>
+        var pesos = 0;
+        var idades = 0;
+        var genero;
+
+        pesos = [61, 72, 83, 94, 105, 66, 77, 88, 99, 110];
+        idades = [15, 20, 25, 30, 35, 40, 45, 50, 55, 60];
+        genero = ["F", "M", "F", "M", "F", "M", "F", "M", "F", "M"];
+        
+        function mediasGeral(genero, idades, pesos, seletor) {
+            var somaPeso = 0;
+            var somaIdade = 0;
+            var mediaIdade = 0;
+            var quantidade = 0;
+
+            for (var i = 0; i < genero.length; i++) {
+                if (genero[i] === seletor) {
+                    quantidade++;
+                    somaPeso += pesos[i];
+                    somaIdade += idades[i];
+                }
+            }
+            mediaIdade = idadeSoma / quantidade;
+
+            return [somaPeso, idadeSoma, mediaIdade, quantidade]
+        }
+        var homens = mediasGeral(genero, idades, pesos, "M");
+        var mulheres = mediasGeral(genero, idades, pesos, "F");
+
+
+        alert("--== HOMENS ==--\nSão " + homens[3] +
+            " Homens. \nMédia de Pesos: " + homens[0] +
+            " kgs.\nSoma das Idade: " + homens[1] +
+            " anos.\nMedia Idade: " + homens[2] + " anos.");
+        alert("--== MULHERES ==--\nSão " + mulheres[3] +
+            " Mulheres \n Média de Peso: " + mulheres[0] +
+            " kgs.\nSoma das Idade: " + mulheres[1] +
+            " anos.\nMedia Idade: " + mulheres[2] + " anos.");
+    </script>
+
+
+
+</body>
+
+</html>

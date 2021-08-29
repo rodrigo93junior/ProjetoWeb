@@ -3,14 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Questão 1</title>
+    <title>Questão 2</title>
 </head>
 
 <body>
 
     <script>
-        
-       
+        let i; 
+        let idade; 
+        let opniao;
+        let idadeOtimo = 0; 
+        let contaidadeOtimo = 0; 
+        let media; 
+        let quantidadeRegular = 0; 
+        let contquantidadeRegular = 0;
+        let quantidadeBom = 0;
+        let contquantidadeBom = 0;
+        let percentualBom;
+
+        for(i = 1; i <= 15; i++) {
+            idade = parseInt(prompt("Digite sua idade["+i+"]:"));
+            opniao = prompt("Sua opnião em relação ao filme: ótimo - 3, bom - 2, regular - 1:");
+
+            if(opniao == 3) {
+                idadeOtimo += idade;
+                contaidadeOtimo++;
+            } if(opniao == 1) {
+                quantidadeRegular += opniao;
+                contquantidadeRegular++;
+            } if(opniao == 2) {
+                quantidadeBom += opniao;
+                contquantidadeBom++;
+            }
+        } media = idadeOtimo/contaidadeOtimo;
+        percentualBom = (contquantidadeBom*100)/15;
+        alert("Média das idades das pessoas que responderam ótimo: "+media);
+        alert("Quantidade de pessoas que responderam regular é: "+contquantidadeRegular);
+        alert("Porcentagem de pessoas que responderam bom: "+percentualBom);
     </script>
     
 
