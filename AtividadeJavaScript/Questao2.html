@@ -16,7 +16,7 @@
         var contaidadeOtimo = 0; 
         var media; 
         var quantidadeRegular = 0; 
-        var contquantidadeRegular = 0;
+        var contQuantidadeRegular = 0;
         var quantidadeBom = 0;
         var contquantidadeBom = 0;
         var percentualBom;
@@ -30,7 +30,7 @@
                 contaidadeOtimo++;
             } if(opniao == 1) {
                 quantidadeRegular += opniao;
-                contquantidadeRegular++;
+                contQuantidadeRegular++;
             } if(opniao == 2) {
                 quantidadeBom += opniao;
                 contquantidadeBom++;
@@ -38,7 +38,7 @@
         } media = idadeOtimo/contaidadeOtimo;
         percentualBom = (contquantidadeBom*100)/15;
         alert("Média das idades das pessoas que responderam ótimo: "+media);
-        alert("Quantidade de pessoas que responderam regular é: "+contquantidadeRegular);
+        alert("Quantidade de pessoas que responderam regular é: "+contQuantidadeRegular);
         alert("Porcentagem de pessoas que responderam bom: "+percentualBom);
     </script>
     
