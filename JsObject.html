@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Js Object</title>
+    <script>
+        var carro = {
+            tipo: "fiat",
+            modelo: "500",
+            cor: "red",
+            portas: "2"
+        };
+        var carro2 = {
+            tipo: "For",
+            modelo: "Ka",
+            cor: "red",
+            portas: "4"
+        };
+        var meuCarro = new Object();
+        meuCarro.tipo = "Volks";
+        meuCarro.modelo = "GTI";
+        meuCarro.cor = "Azul";
+        meuCarro.pneu = 4;
+
+        console.log(carro.tipo);
+        console.log(carro.modelo);
+        console.log(carro.cor);
+        console.log(carro.pneu);
+
+        var campo = "modelo";
+        console.log(carro[campo]);
+        console.log(carro["modelo"]);
+
+        function mensagem() {
+            //alert("Ola Mundo");
+            debugger;
+        }
+        function alteracao() {
+            //alert("Alterou")
+        }
+        function salvar() {
+            //CRUD
+            var inputNome = document.getElementById("nome");
+            var valorNome = inputNome.value;
+            var divCaixa = document.getElementById("caixa");
+            //alert(valorNome);
+            if (valorNome == "Teste") {
+                inputNome.style.backgroundColor = "blue";
+                var novaDiv = document.createElement("div");
+                novaDiv.innerText = valorNome;
+                novaDiv.style.backgroundColor = "white";
+                divCaixa.appendChild(novaDiv);
+                
+            } else {
+                inputNome.style.backgroundColor = "yellow";
+                var novaDiv = document.createElement("div");
+                novaDiv.innerText = valorNome;
+                novaDiv.style.backgroundColor = "gray";
+                divCaixa.appendChild(novaDiv);
+            }
+            
+
+
+        }
+        function limparConteudo() {
+            //alert("Entrou");
+            var divCaixa = document.getElementById("caixa");
+            divCaixa.innerHTML = "";
+            divCaixa.style.backgroundColor = "red";
+        }
+        function saindo() {
+            //alert("Saindo");
+            var divCaixa = document.getElementById("caixa");
+            divCaixa.innerHTML = "";
+            divCaixa.style.backgroundColor = "green";
+        }
+
+        document.write("Amanhã é dia de Pizza!");
+    </script>
+    <style>
+        #caixa {
+            width: 200px;
+            height: 300px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+
+<body onload="mensagem()">
+    <div>
+        <input type="text" placeholder="Nome" id="nome" onchange="alteracao();">
+        <input type="button" value="Clique" onclick="salvar();">
+    </div>
+    <div id="caixa" onmouseover="limparConteudo()" onmouseout="saindo()">
+        Rodrigo
+    </div>
+</body>
+
+</html>
